@@ -6,6 +6,7 @@ Expose all usable time-series anomaly detection models.
 # License: BSD-3-Clause
 
 from .autoformer import Autoformer
+from .dcdetector import DCdetector
 from .dlinear import DLinear
 from .imputeformer import ImputeFormer
 from .patchtst import PatchTST
@@ -29,6 +30,7 @@ from .film import FiLM
 
 __all__ = [
     "Autoformer",
+    "DCdetector",
     "SAITS",
     "TEFN",
     "ImputeFormer",
