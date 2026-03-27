@@ -347,7 +347,7 @@ Here is [an incomplete list of them](https://scholar.google.com/scholar?as_ylo=2
 @article{du2023pypots,
 title = {{PyPOTS: A Python Toolkit for Data Mining on Partially-Observed Time Series}},
 author = {Wenjie Du},
-journal = {KDD 2023 MiLeTS},
+journal = {SIGKDD MiLeTS Workshop},
 year = {2023},
 }
 ```

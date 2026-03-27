@@ -326,7 +326,7 @@ PyPOTS也已被纳入[PyTorch Ecosystem](https://landscape.pytorch.org/?item=mod
 @article{du2023pypots,
 title = {{PyPOTS: A Python Toolkit for Data Mining on Partially-Observed Time Series}},
 author = {Wenjie Du},
-journal = {KDD 2023 MiLeTS},
+journal = {SIGKDD MiLeTS Workshop},
 year = {2023},
 }
 ```

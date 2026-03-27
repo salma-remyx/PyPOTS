@@ -244,7 +244,7 @@ please cite it as below and 🌟star `PyPOTS repository <https://github.com/Wenj
     @article{du2023pypots,
     title = {{PyPOTS: A Python Toolkit for Data Mining on Partially-Observed Time Series}},
     author = {Wenjie Du},
-    journal = {KDD 2023 MiLeTS},
+    journal = {SIGKDD MiLeTS Workshop},
     year = {2023},
     }
 
