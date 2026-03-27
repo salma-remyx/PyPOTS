@@ -133,8 +133,8 @@ proposed as algorithms for POTS data in their papers, and they cannot directly a
 To make them applicable to POTS data, we specifically apply the embedding strategy and training approach (ORT+MIT)
 the same as we did in `the SAITS paper <https://arxiv.org/pdf/2202.08516)>`_ :cite:`du2023SAITS`.
 
-The task types are abbreviated as follows: **IMPU**: Imputation; **FORE**: Forecasting;
-**CLAS**: Classification; **CLUS**: Clustering; **ANOD**: Anomaly Detection.
+The task types are abbreviated as follows: **IMPT**: Imputation; **FCST**: Forecasting;
+**CLAF**: Classification; **CLUS**: Clustering; **ANOD**: Anomaly Detection.
 In addition to the 5 tasks, PyPOTS also provides TS2Vec :cite:`yue2022ts2vec` for time series representation learning and vectorization.
 The paper references are all listed at the bottom of this readme file.
 
