@@ -225,7 +225,7 @@
      -
      - ``2023 - arXiv``
    * - Neural Net
-     - SegRNN🧑‍🔧 :cite:`lin2023segrnn`
+     - SegRNN🧑‍🔧 :cite:`lin2026segrnn`
      - ✅
      - ✅
      -
