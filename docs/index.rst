@@ -309,7 +309,7 @@ PyPOTS community is open, transparent, and surely friendly. Let's work together 
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Docs of PyPOTS Ecosystem
+   :caption: User Docs of PyPOTS
 
    model_api
    pypots
