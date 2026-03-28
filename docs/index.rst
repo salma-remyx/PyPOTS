@@ -324,5 +324,4 @@ PyPOTS community is open, transparent, and surely friendly. Let's work together 
 
    faq
    milestones
-   about_us
    references
