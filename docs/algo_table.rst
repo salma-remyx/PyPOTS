@@ -10,9 +10,9 @@
 
    * - Type
      - Algorithm
-     - IMPU
-     - FORE
-     - CLAS
+     - IMPT
+     - FCST
+     - CLAF
      - CLUS
      - ANOD
      - Year - Venue
@@ -32,6 +32,14 @@
      -
      -
      - ``2026 - ICLR``
+   * - Neural Net
+     - SegRNN🧑‍🔧 :cite:`lin2026segrnn`
+     - ✅
+     - ✅
+     -
+     -
+     - ✅
+     - ``2026 - IoT-J``
    * - Neural Net
      - TEFN🧑‍🔧 :cite:`zhan2025tefn`
      - ✅
@@ -223,14 +231,6 @@
      - ✅
      -
      -
-     - ``2023 - arXiv``
-   * - Neural Net
-     - SegRNN🧑‍🔧 :cite:`lin2023segrnn`
-     - ✅
-     - ✅
-     -
-     -
-     - ✅
      - ``2023 - arXiv``
    * - Neural Net
      - TS2Vec :cite:`yue2022ts2vec`
