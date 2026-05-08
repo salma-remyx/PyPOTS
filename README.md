@@ -60,6 +60,9 @@
     <a href="https://pepy.tech/project/pypots">
         <img alt="PyPI downloads" src="https://pypots.com/figs/downloads_badges/pypi_pypots_downloads.svg">
     </a>
+    <a href="https://hub.docker.com/r/wenjiedu/pypots">
+        <img alt="Docker pulls" src="https://img.shields.io/docker/pulls/wenjiedu/pypots?logo=docker&label=Docker%20Pulls&logoColor=white&color=1859DC">
+    </a>
     <a href="https://arxiv.org/abs/2305.18811">
         <img alt="arXiv DOI" src="https://img.shields.io/badge/DOI-10.48550/arXiv.2305.18811-F8F7F0">
     </a>

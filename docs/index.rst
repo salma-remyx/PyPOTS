@@ -78,6 +78,10 @@ Welcome to PyPOTS docs!
    :alt: PyPI downloads
    :target: https://pepy.tech/project/pypots
 
+.. image:: https://img.shields.io/docker/pulls/wenjiedu/pypots?logo=docker&label=Docker%20Pulls&logoColor=white&color=1859DC
+   :alt: Docker Pulls
+   :target: https://hub.docker.com/r/wenjiedu/pypots
+
 .. image:: https://img.shields.io/badge/DOI-10.48550/arXiv.2305.18811-F8F7F0
    :alt: arXiv DOI
    :target: https://arxiv.org/abs/2305.18811
