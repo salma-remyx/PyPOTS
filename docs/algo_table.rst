@@ -138,11 +138,7 @@
      - ``2024 - TMLR``
    * - Neural Net
      - TKAN🧑‍🔧 :cite:`genet2024tkan`
-<<<<<<< HEAD
-     - ✅
-=======
      - `✅ <https://github.com/WenjieDu/PyPOTS/blob/main/examples/imputation/tkan_imputation_example.py>`_
->>>>>>> main
      -
      -
      -
