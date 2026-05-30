@@ -22,6 +22,9 @@ from .clustering import (
     calc_external_cluster_validation_metrics,
 )
 from .cuda import autocast
+from .dependency import (
+    calc_cross_channel_dependency_error,
+)
 from .error import (
     calc_mae,
     calc_mse,
@@ -48,6 +51,8 @@ __all__ = [
     "calc_mre",
     "calc_quantile_crps",
     "calc_quantile_crps_sum",
+    # cross-channel dependency
+    "calc_cross_channel_dependency_error",
     # classification
     "calc_binary_classification_metrics",
     "calc_precision_recall_f1",
