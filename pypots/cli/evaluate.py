@@ -13,8 +13,8 @@ import click
 TASK_CHOICES = ["imputation", "classification", "forecasting", "anomaly_detection", "clustering"]
 
 TASK_METRICS = {
-    "imputation": ["mse", "mae", "rmse", "mre"],
-    "forecasting": ["mse", "mae", "rmse", "mre"],
+    "imputation": ["mse", "mae", "rmse", "mre", "ccde"],
+    "forecasting": ["mse", "mae", "rmse", "mre", "ccde"],
     "classification": ["accuracy", "precision", "recall", "f1", "pr_auc", "roc_auc"],
     "anomaly_detection": ["accuracy", "precision", "recall", "f1", "pr_auc", "roc_auc"],
     "clustering": ["rand_index", "adjusted_rand_index", "nmi", "cluster_purity", "silhouette", "chs", "dbs"],
@@ -26,7 +26,7 @@ def _evaluate_imputation_forecasting(task, pred_data, gt_data, metrics_to_comput
     import numpy as np
     import torch
 
-    from ..nn.functional import calc_mse, calc_mae, calc_rmse, calc_mre
+    from ..nn.functional import calc_mse, calc_mae, calc_rmse, calc_mre, calc_cross_channel_dependency_error
     from ..utils.logging import logger
 
     pred_key = task  # "imputation" or "forecasting"
@@ -66,6 +66,9 @@ def _evaluate_imputation_forecasting(task, pred_data, gt_data, metrics_to_comput
         "mae": calc_mae,
         "rmse": calc_rmse,
         "mre": calc_mre,
+        # cross-channel dependency error: how well the reconstruction preserves
+        # the ground-truth inter-channel correlation structure (adapted from XCTFormer)
+        "ccde": calc_cross_channel_dependency_error,
     }
 
     results = {}

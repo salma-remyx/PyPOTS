@@ -575,3 +575,23 @@ Join our waitlist right now to receive the latest news and be the first to try i
 [^55]: Zhang, F., Du, W., Zhang, H., Yu, K., & Qu, S. (2026).
 [HELIX: Hybrid Encoding with Learnable Identity and Cross-dimensional Synthesis for Time Series Imputation](https://arxiv.org/abs/2605.02278).
 *ICML 2026*.
+
+
+## Cross-Channel Dependency Error (CCDE) — adapted from XCTFormer: Leveraging Cross-Channel and Cross-Time Dependencies for Enhanced Time-Series Analysis
+
+Pointwise reconstruction metrics (MAE, MSE, RMSE, MRE) score each imputed value
+independently and are blind to whether a reconstruction respects the
+relationships *between* channels. XCTFormer ([arXiv:2605.18534](https://arxiv.org/abs/2605.18534))
+argues that real-world multivariate series share an underlying context, so their
+channels carry latent cross-channel dependencies a good model should preserve.
+
+`calc_cross_channel_dependency_error` (`pypots.nn.functional`) turns that idea
+into an evaluation signal: it compares the inter-channel Pearson correlation
+structure of the predictions against that of the ground truth, returning a value
+in `[0, 2]` (0 = correlation structure perfectly preserved). It is exposed as the
+`ccde` metric for the `imputation` and `forecasting` tasks of the
+`pypots evaluate` CLI command, so a reconstruction with low MAE but distorted
+inter-variable structure is now observable. Only the evaluation signal is
+adapted here — the XCTFormer model architecture (CRAB / DeCoP) is not implemented.
+
+Contributed via [Remyx Recommendation](https://engine.remyx.ai).
